@@ -84,7 +84,7 @@ extern Ticker flasher;
 #define MEDIANAVRG MEDIANROUNDSMIN
 #define MEDIAN_MAX_SIZE MEDIANROUNDSMAX
 
-#define CBP_ENDPOINT "/api/hydrometer/v1/data"
+#define CBP_ENDPOINT "/api/cervejeiro/v1/data"
 
 #define DTUbiDots 0
 #define DTThingspeak 1
@@ -136,13 +136,13 @@ String tempScaleLabel(uint8_t);
 struct iData
 {
   char token[TKIDSIZE * 2];
-  char name[TKIDSIZE] = "iSpindel000";
+  char name[TKIDSIZE] = "cervejeiro000";
   char server[DNSSIZE];
   char uri[DNSSIZE];
-  char db[TKIDSIZE] = "ispindel";
+  char db[TKIDSIZE] = "cervejeiro";
   char username[TKIDSIZE];
   char password[TKIDSIZE];
-  char job[TKIDSIZE] = "ispindel";
+  char job[TKIDSIZE] = "cervejeiro";
   char instance[TKIDSIZE] = "000";
   char polynominal[1000] = "-0.00031*tilt^2+0.557*tilt-14.054";
   String ssid;
